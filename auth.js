@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const { reject } = require('bcrypt/promises')
 const { nextTick } = require('process')
-const jwtSecret = process.env.JWT_SECRET
+const jwtSecret = process.env.JWT_SECRET | "changeme"
 
 module.exports = {
 	encryptPassword: (password) => {

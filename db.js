@@ -5,11 +5,11 @@ let init = function() {
 
     // make sure to import 'db_import/createDB.sql' into your PostgreSQL database first	
 	db = mariadb.createPool({
-		host: process.env.DB_HOST,
+		host: process.env.DB_HOST || "localhost",
 		port: process.env.DB_PORT || 3306,
-		user: process.env.DB_USER,
-		password: process.env.DB_PASS,
-		database: process.env.DB_NAME,
+		user: process.env.DB_USER || "webtech-backend",
+		password: process.env.DB_PASS || "changeme",
+		database: process.env.DB_NAME  || "webtech-backend",
 		connectionLimit: 5});
 	
 };
