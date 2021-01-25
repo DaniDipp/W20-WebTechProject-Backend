@@ -1,45 +1,46 @@
 # Trustmart Backend API
-This is the backend application for a Web Technologies project at the Alpen-Adria-University. The frontend has been written by my colleague and can be found [here](https://github.com/koflerm/WebTechProject-Frontend).
+https://github.com/DaniDipp/W20-WebTechProject-Backend
+
+This is the backend application for a Web Technologies project at the Alpen-Adria-University. The frontend has been written by my colleague and can be found [here](koflerm/WebTechProject-Frontend#readme).
 
 ## Table of Contents
 - [Trustmart Backend API](#trustmart-backend-api)
-	- [Table of Contents](#table-of-contents)
-	- [Live Demo](#live-demo)
-	- [Documentation](#documentation)
-		- [Installation](#installation)
-			- [Environment Variables](#environment-variables)
-		- [Technologies](#technologies)
-			- [Node](#node)
-			- [Database](#database)
-				- [Products](#products)
-				- [Categories](#categories)
-				- [Users](#users)
-				- [Orders](#orders)
-				- [Ratings](#ratings)
-		- [API Endpoints](#api-endpoints)
-			- [Products Endpoint](#products-endpoint)
-			- [Categories Endpoint](#categories-endpoint)
-			- [Users Endpoint](#users-endpoint)
-			- [Orders Endpoint](#orders-endpoint)
-			- [Ratings Endpoint](#ratings-endpoint)
+  - [Table of Contents](#table-of-contents)
+  - [Live Demo](#live-demo)
+  - [Documentation](#documentation)
+    - [Installation](#installation)
+      - [Environment Variables](#environment-variables)
+    - [Technologies](#technologies)
+      - [Node](#node)
+      - [Database](#database)
+        - [Products](#products)
+        - [Categories](#categories)
+        - [Users](#users)
+        - [Orders](#orders)
+        - [Ratings](#ratings)
+    - [API Endpoints](#api-endpoints)
+      - [Products Endpoint](#products-endpoint)
+      - [Categories Endpoint](#categories-endpoint)
+      - [Users Endpoint](#users-endpoint)
+      - [Orders Endpoint](#orders-endpoint)
+      - [Ratings Endpoint](#ratings-endpoint)
 
 ## Live Demo
 For the duration of the semester, I will be hosting this project on my server at [https://webtech.danidipp.com/](https://webtech.danidipp.com/). 
 
----
-
 ## Documentation
 ### Installation
-1. Install [Node.js](https://nodejs.org/en/)
-2. Download the code as ZIP and unpack it or, using the git cli run
+1. Set up the [Database](#database)
+2. Install [Node.js](https://nodejs.org/en/)
+3. Download the code as ZIP and unpack it or, using the git cli run
 ```bash
 git clone https://github.com/DaniDipp/W20-WebTechProject-Backend.git
 ```
-3. Install the dependencies
+4. Install the dependencies
 ```bash
 npm install
 ```
-4. Start the server
+5. Start the server
 ```bash
 npm start
 ```
@@ -64,6 +65,8 @@ The server is running [Node.js](https://nodejs.org/en/), using the following dep
 
 #### Database
 Because I already had a [MariaDB](https://mariadb.org) database running on my server, I chose that over MySQL or PostgreSQL
+
+You can find the SQL dump of the database with example data [here](webtechproject.sql).
 
 ##### Products
 | Column        | Type           | Attributes                        |
