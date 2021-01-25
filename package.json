@@ -1,19 +1,23 @@
 {
 	"name": "webtech-backend",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Backend API of Trustmart, a Web Technologies Project at the Alpen-Adria-University",
+	"homepage": "https://github.com/DaniDipp/W20-WebTechProject-Backend/#readme",
 	"main": "app.js",
 	"scripts": {
-		"start": "nodemon app.js"
+		"start": "node app.js"
+		"dev": "nodemon app.js"
 	},
-	"author": "",
-	"license": "ISC",
+	"author": "Daniel (@DaniDipp) Dippold",
+	"license": "MIT",
 	"dependencies": {
 		"bcrypt": "^5.0.0",
 		"cors": "^2.8.5",
 		"express": "^4.17.1",
 		"jsonwebtoken": "^8.5.1",
-		"mariadb": "^2.5.2",
+		"mariadb": "^2.5.2"
+	},
+	"devDependencies": {
 		"nodemon": "^2.0.7"
 	}
 }
