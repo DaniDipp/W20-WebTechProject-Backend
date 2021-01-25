@@ -179,7 +179,7 @@ router.route('/')
 			}
 			return res.status(200).json({
 				status: "success",
-				message: "Added new user to DB",
+				message: "Added new rating to DB",
 				rating: {
 					product_id: product_id,
 					user_email: user_email,
