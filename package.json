@@ -5,7 +5,7 @@
 	"homepage": "https://github.com/DaniDipp/W20-WebTechProject-Backend/#readme",
 	"main": "app.js",
 	"scripts": {
-		"start": "node app.js"
+		"start": "node app.js",
 		"dev": "nodemon app.js"
 	},
 	"author": "Daniel (@DaniDipp) Dippold",
